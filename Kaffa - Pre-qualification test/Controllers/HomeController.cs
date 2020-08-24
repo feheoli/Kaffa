@@ -47,8 +47,6 @@ namespace Kaffa___Pre_qualification_test.Controllers
 
         public ActionResult Exercicio2()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
         public ActionResult Exercicio2Result(string txtCNPJ)
