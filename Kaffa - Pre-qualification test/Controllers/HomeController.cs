@@ -125,7 +125,9 @@ namespace Kaffa___Pre_qualification_test.Controllers
         {
             bool success = true;
             StreamWriter x;
-            string Caminho = @"C:\\Users\\fhenriquedeo\\Desktop\\Teste Kaffa\\Kaffa - Pre-qualification test\\Kaffa - Pre-qualification test\\File\\dados.txt";
+            //string Caminho = @"C:\\Users\\fhenriquedeo\\Desktop\\Teste Kaffa\\Kaffa - Pre-qualification test\\Kaffa - Pre-qualification test\\File\\dados.txt";
+            string dataDir = AppDomain.CurrentDomain.GetData("DataDirectory").ToString();
+            string Caminho = dataDir + @"\\../File\\dados.txt";
 
             using (StreamWriter sw = new StreamWriter(Caminho))
             {
@@ -137,7 +139,9 @@ namespace Kaffa___Pre_qualification_test.Controllers
             public ActionResult Exercicio5Result(Exercicio5 model)
         {
             StreamWriter x;
-            string Caminho = @"C:\\Users\\fhenriquedeo\\Desktop\\Teste Kaffa\\Kaffa - Pre-qualification test\\Kaffa - Pre-qualification test\\File\\dados.txt";
+            string dataDir = AppDomain.CurrentDomain.GetData("DataDirectory").ToString();
+            string Caminho = dataDir + @"\\../File\\dados.txt";
+            //string Caminho = @"C:\\Users\\fhenriquedeo\\Desktop\\Teste Kaffa\\Kaffa - Pre-qualification test\\Kaffa - Pre-qualification test\\File\\dados.txt";
 
             System.IO.File.AppendText(Caminho).Close();
 
