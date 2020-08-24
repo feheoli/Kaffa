@@ -1,0 +1,6 @@
+Nome: Felipe Henrique de Oliveira
+Data: 21/08/2020
+
+-> Baixar todo o conteúdo do projeto no gitHub: https://github.com/feheoli/Kaffa
+-> Executar o site em modo Debug
+-> Realizar os testes necessários
